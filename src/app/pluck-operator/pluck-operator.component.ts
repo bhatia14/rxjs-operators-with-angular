@@ -56,11 +56,13 @@ export class PluckOperatorComponent implements OnInit {
 
   ngOnInit(): void {
 
+    //Example 1
     from(this.team).pipe(
       pluck('name'),
       toArray()
     ).subscribe(res => this.names = res);
 
+    //Example 2
     from(this.team).pipe(
       pluck('job', 'title'),
       toArray()
