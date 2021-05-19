@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
+ 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,8 @@ import { PluckOperatorComponent } from './pluck-operator/pluck-operator.componen
 import { FilterOperatorComponent } from './filter-operator/filter-operator.component';
 import { TapOperatorComponent } from './tap-operator/tap-operator.component';
 import { TakeOperatorComponent } from './take-operator/take-operator.component';
+import { RetryOperatorComponent } from './retry-operator/retry-operator.component';
+import { DebounceOperatorComponent } from './debounce-operator/debounce-operator.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,14 @@ import { TakeOperatorComponent } from './take-operator/take-operator.component';
     PluckOperatorComponent,
     FilterOperatorComponent,
     TapOperatorComponent,
-    TakeOperatorComponent
+    TakeOperatorComponent,
+    RetryOperatorComponent,
+    DebounceOperatorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
