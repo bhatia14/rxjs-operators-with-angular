@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
- 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +11,10 @@ import { TapOperatorComponent } from './tap-operator/tap-operator.component';
 import { TakeOperatorComponent } from './take-operator/take-operator.component';
 import { RetryOperatorComponent } from './retry-operator/retry-operator.component';
 import { DebounceOperatorComponent } from './debounce-operator/debounce-operator.component';
+import { Comp1Component } from './subject/comp1/comp1.component';
+import { Comp2Component } from './subject/comp2/comp2.component';
+import { Comp3Component } from './subject/comp3/comp3.component';
+import { SubjectOperatorComponent } from './subject-operator/subject-operator.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,11 @@ import { DebounceOperatorComponent } from './debounce-operator/debounce-operator
     TapOperatorComponent,
     TakeOperatorComponent,
     RetryOperatorComponent,
-    DebounceOperatorComponent
+    DebounceOperatorComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    SubjectOperatorComponent
   ],
   imports: [
     BrowserModule,
