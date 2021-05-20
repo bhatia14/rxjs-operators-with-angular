@@ -9,7 +9,7 @@ import { DesignUtilityService } from '../services/design-utility.service';
 export class SubjectOperatorComponent implements OnInit {
 
   exclusive: boolean = false;
-  username: string = 'default';
+  username: string;
 
   constructor(private _designUtility: DesignUtilityService) { }
 
